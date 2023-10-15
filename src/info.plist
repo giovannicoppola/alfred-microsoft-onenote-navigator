@@ -144,6 +144,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E69B9CA9-4AFE-4EDC-A90E-673D69C183C3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -169,7 +190,7 @@
 				<key>runningsubtext</key>
 				<string>getting all notebooks and sections...</string>
 				<key>script</key>
-				<string>/usr/bin/python getNotebooks.py -a $1</string>
+				<string>python3 getNotebooks.py -a $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -189,25 +210,6 @@
 			<string>8DD989D4-B6F0-4D1A-8122-D8D10F2996FB</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string></string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>E69B9CA9-4AFE-4EDC-A90E-673D69C183C3</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -245,7 +247,7 @@
 				<key>runningsubtext</key>
 				<string>getting recent notebooks and sections...</string>
 				<key>script</key>
-				<string>/usr/bin/python getNotebooks.py -r</string>
+				<string>python3 getNotebooks.py -r</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -294,7 +296,7 @@
 				<key>runningsubtext</key>
 				<string>getting last modified items...</string>
 				<key>script</key>
-				<string>/usr/bin/python getNotebooks.py -m $1</string>
+				<string>python3 getNotebooks.py -m $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -343,7 +345,7 @@
 				<key>runningsubtext</key>
 				<string>getting recent notebooks and sections...</string>
 				<key>script</key>
-				<string>/usr/bin/python getNotebooks.py -b</string>
+				<string>python3 getNotebooks.py -b</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -377,7 +379,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/bin/python getNotebooks.py -o $1</string>
+				<string>python3 getNotebooks.py -o $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -437,7 +439,7 @@
 				<key>runningsubtext</key>
 				<string>getting last modified items...</string>
 				<key>script</key>
-				<string>/usr/bin/python getNotebooks.py -u</string>
+				<string>python3 getNotebooks.py -u</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -483,9 +485,9 @@
 			<key>note</key>
 			<string>search all notebooks</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>415</integer>
+			<real>415</real>
 		</dict>
 		<key>8A8479A7-4DEB-493A-A693-8AEBFEF59D6D</key>
 		<dict>
@@ -494,9 +496,9 @@
 			<key>note</key>
 			<string>search all notebooks</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>550</integer>
+			<real>550</real>
 		</dict>
 		<key>8DD989D4-B6F0-4D1A-8122-D8D10F2996FB</key>
 		<dict>
@@ -505,16 +507,16 @@
 			<key>note</key>
 			<string>search all notebooks</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>8FB60A23-AF3A-48DA-94A2-F960644EA6B1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>495</integer>
+			<real>495</real>
 			<key>ypos</key>
-			<integer>415</integer>
+			<real>415</real>
 		</dict>
 		<key>BFE149FE-F843-4A52-B01E-B5178AA4913C</key>
 		<dict>
@@ -523,25 +525,25 @@
 			<key>note</key>
 			<string>search last modified</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>280</real>
 		</dict>
 		<key>C7954467-8DC2-413C-B867-7480390F51C6</key>
 		<dict>
 			<key>note</key>
 			<string>called remotely</string>
 			<key>xpos</key>
-			<integer>505</integer>
+			<real>505</real>
 			<key>ypos</key>
-			<integer>595</integer>
+			<real>595</real>
 		</dict>
 		<key>C9D96362-8D69-4993-A551-D9BA020F8206</key>
 		<dict>
 			<key>xpos</key>
-			<integer>390</integer>
+			<real>390</real>
 			<key>ypos</key>
-			<integer>40</integer>
+			<real>40</real>
 		</dict>
 		<key>E2DFC956-1592-43C4-8D0F-A328C96EBCE5</key>
 		<dict>
@@ -550,36 +552,38 @@
 			<key>note</key>
 			<string>search recent items</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>145</real>
 		</dict>
 		<key>E69B9CA9-4AFE-4EDC-A90E-673D69C183C3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>495</integer>
+			<real>495</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>FEE8D3B6-E4CE-4E6E-A611-09C54776BF54</key>
 		<dict>
 			<key>xpos</key>
-			<integer>390</integer>
+			<real>390</real>
 			<key>ypos</key>
-			<integer>445</integer>
+			<real>445</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>q</key>
-		<string>{20E7838E-AB68-5C4C-BC28-665AF423CC67}{10}</string>
+		<string>{CC8DD2B0-9BE9-AB49-AD7B-8AC94A063A38}{16}</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>q</string>
 	</array>
 	<key>version</key>
-	<string>2.0.0</string>
+	<string>2.1.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/kevin-funderburg/alfred-microsoft-onenote-navigator</string>
 </dict>

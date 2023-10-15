@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # encoding: utf-8
 
-from __future__ import unicode_literals
+#from __future__ import unicode_literals
 
 import os
 import sys
@@ -159,7 +159,7 @@ def update_notebook_items():
 
 def get_page_name(GUID):
     conn = create_connection(wf.datafile(MERGED_DB))
-    conn.text_factory = unicode
+    #conn.text_factory = unicode
     cur = conn.cursor()
     cur.execute(str("SELECT * FROM Entities WHERE GUID = \"{0}\"".format(GUID)))
     r = cur.fetchone()
@@ -207,7 +207,7 @@ def create_connection(db_file):
     try:
         conn = sqlite3.connect(rdb)
         conn.row_factory = sqlite3.Row
-        conn.text_factory = unicode
+        #conn.text_factory = unicode
     except Error as e:
         raise e
 
